@@ -79,7 +79,7 @@
                     app:cornerRadius="100dp" />
 
                 <Button
-                    android:id="@+id/btnJedn"
+                    android:id="@+id/btnZamJedn"
                     android:layout_width="match_parent"
                     android:layout_height="61dp"
                     android:layout_weight="1"
