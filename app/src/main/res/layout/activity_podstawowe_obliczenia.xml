@@ -30,6 +30,7 @@
                 android:layout_width="335dp"
                 android:layout_height="44dp"
                 android:text="Podstawowe obliczenia"
+                android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 android:textStyle="bold"
