@@ -18,8 +18,8 @@ class PodstawoweObliczenia : AppCompatActivity() {
 
         var pierwszaCzesc = ""
         var drugaCzesc = ""
-
-        val wynik = findViewById<TextView>(R.id.tvWynik)
+        var dzialanie = ""
+        
 
         val back = findViewById<Button>(R.id.btnBackFromPO)
 
@@ -29,7 +29,6 @@ class PodstawoweObliczenia : AppCompatActivity() {
         }
 
         fun drugie(){
-            
             binding.btn7.setOnClickListener() {
                 var data = binding.btn7.text
                 drugaCzesc += data
@@ -77,6 +76,54 @@ class PodstawoweObliczenia : AppCompatActivity() {
             }
         }
 
+        fun pierwsze(){
+            binding.btn7.setOnClickListener() {
+                var data = binding.btn7.text
+                pierwszaCzesc += data
+                binding.tvWynik.text = pierwszaCzesc.toString()
+            }
+            binding.btn8.setOnClickListener() {
+                var data = binding.btn8.text
+                pierwszaCzesc += data
+                binding.tvWynik.text = pierwszaCzesc.toString()
+            }
+            binding.btn9.setOnClickListener() {
+                var data = binding.btn9.text
+                pierwszaCzesc += data
+                binding.tvWynik.text = pierwszaCzesc.toString()
+            }
+            binding.btn4.setOnClickListener() {
+                var data = binding.btn4.text
+                pierwszaCzesc += data
+                binding.tvWynik.text = pierwszaCzesc.toString()
+            }
+            binding.btn5.setOnClickListener() {
+                var data = binding.btn5.text
+                pierwszaCzesc += data
+                binding.tvWynik.text = pierwszaCzesc.toString()
+            }
+            binding.btn6.setOnClickListener() {
+                var data = binding.btn6.text
+                pierwszaCzesc += data
+                binding.tvWynik.text = pierwszaCzesc.toString()
+            }
+            binding.btn1.setOnClickListener() {
+                var data = binding.btn1.text
+                pierwszaCzesc += data
+                binding.tvWynik.text = pierwszaCzesc.toString()
+            }
+            binding.btn2.setOnClickListener() {
+                var data = binding.btn2.text
+                pierwszaCzesc += data
+                binding.tvWynik.text = pierwszaCzesc.toString()
+            }
+            binding.btn3.setOnClickListener() {
+                var data = binding.btn3.text
+                pierwszaCzesc += data
+                binding.tvWynik.text = pierwszaCzesc.toString()
+            }
+        }
+        
         drugie()
 
     }
