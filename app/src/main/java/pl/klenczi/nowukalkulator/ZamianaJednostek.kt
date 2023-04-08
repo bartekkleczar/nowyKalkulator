@@ -10,9 +10,9 @@ class ZamianaJednostek : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zamiana_jednostek)
 
-        val powrot = findViewById<Button>(R.id.btnBackFromZJ)
+        val back = findViewById<Button>(R.id.btnBackFromZJ)
 
-        powrot.setOnClickListener{
+        back.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

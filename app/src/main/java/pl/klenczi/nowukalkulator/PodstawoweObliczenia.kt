@@ -10,9 +10,9 @@ class PodstawoweObliczenia : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_podstawowe_obliczenia)
 
-        val powrot = findViewById<Button>(R.id.btnBackFromPO)
+        val back = findViewById<Button>(R.id.btnBackFromPO)
 
-        powrot.setOnClickListener{
+        back.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
