@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import pl.klenczi.nowukalkulator.databinding.ActivityPodstawoweObliczeniaBinding
+import java.util.*
 
 class PodstawoweObliczenia : AppCompatActivity() {
     private lateinit var binding: ActivityPodstawoweObliczeniaBinding
@@ -16,6 +17,16 @@ class PodstawoweObliczenia : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPodstawoweObliczeniaBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        fun zmianaJezyka(jezyk: String = "pl"){
+            val lang = jezyk
+            val locale = Locale(lang)
+            Locale.setDefault(locale)
+
+            val config = baseContext.resources.configuration
+            config.setLocale(locale)
+            baseContext.createConfigurationContext(config)
+        }
 
         var pierwszaCzesc = ""
         var drugaCzesc = ""
@@ -91,6 +102,7 @@ class PodstawoweObliczenia : AppCompatActivity() {
             }
 
             binding.btnRowna.setOnClickListener{
+                zmianaJezyka("US")
                 var suma = 0.0
                 var assist: String // zmienna do pomocy w kodzie/żeby burdelu nie było
                 when(dzialanie){
@@ -104,6 +116,7 @@ class PodstawoweObliczenia : AppCompatActivity() {
 
                 binding.tvWynik.text = "$pierwszaCzesc $dzialanie $drugaCzesc ${binding.btnRowna.text} $suma"
 
+                zmianaJezyka()
             }
         }
 
