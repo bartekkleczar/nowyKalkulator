@@ -74,7 +74,6 @@ class PodstawoweObliczenia : AppCompatActivity() {
                 drugaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
             }
-
             binding.btn0.setOnClickListener() {
                 val data = binding.btn0.text
                 drugaCzesc += data
@@ -177,6 +176,14 @@ class PodstawoweObliczenia : AppCompatActivity() {
                 drugie()
             }
             
+        }
+
+        binding.btnAC.setOnClickListener(){
+            pierwszaCzesc = ""
+            dzialanie = ""
+            drugaCzesc = ""
+            binding.tvWynik.text = ""
+            pierwsze()
         }
 
         pierwsze()
