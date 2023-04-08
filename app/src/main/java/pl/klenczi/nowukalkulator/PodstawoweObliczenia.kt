@@ -20,7 +20,6 @@ class PodstawoweObliczenia : AppCompatActivity() {
         var pierwszaCzesc = ""
         var drugaCzesc = ""
         var dzialanie = ""
-        
 
         val back = findViewById<Button>(R.id.btnBackFromPO)
 
