@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import pl.klenczi.nowukalkulator.databinding.ActivityPodstawoweObliczeniaBinding
 
 class PodstawoweObliczenia : AppCompatActivity() {
@@ -29,55 +30,65 @@ class PodstawoweObliczenia : AppCompatActivity() {
         }
 
         fun drugie(){
+            var assist: String =  pierwszaCzesc + dzialanie
             binding.btn7.setOnClickListener {
                 val data = binding.btn7.text
                 drugaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
+                binding.tvWynik.text = assist + drugaCzesc
             }
             binding.btn8.setOnClickListener {
                 val data = binding.btn8.text
                 drugaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
+                binding.tvWynik.text = assist + drugaCzesc
             }
             binding.btn9.setOnClickListener {
                 val data = binding.btn9.text
                 drugaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
+                binding.tvWynik.text = assist + drugaCzesc
             }
             binding.btn4.setOnClickListener {
                 val data = binding.btn4.text
                 drugaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
+                binding.tvWynik.text = assist + drugaCzesc
             }
             binding.btn5.setOnClickListener {
                 val data = binding.btn5.text
                 drugaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
+                binding.tvWynik.text = assist + drugaCzesc
             }
             binding.btn6.setOnClickListener {
                 val data = binding.btn6.text
                 drugaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
+                binding.tvWynik.text = assist + drugaCzesc
             }
             binding.btn1.setOnClickListener {
                 val data = binding.btn1.text
                 drugaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
+                binding.tvWynik.text = assist + drugaCzesc
             }
             binding.btn2.setOnClickListener {
                 val data = binding.btn2.text
                 drugaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
+                binding.tvWynik.text = assist + drugaCzesc
             }
             binding.btn3.setOnClickListener {
                 val data = binding.btn3.text
                 drugaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
+                binding.tvWynik.text = assist + drugaCzesc
             }
             binding.btn0.setOnClickListener {
                 val data = binding.btn0.text
                 drugaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
+                binding.tvWynik.text = assist + drugaCzesc
+            }
+
+            binding.btnC.setOnClickListener {
+                if(drugaCzesc.isNotEmpty()){
+                    val data = drugaCzesc.substring(0, drugaCzesc.length - 1)
+                    drugaCzesc = data
+                    binding.tvWynik.text = assist + drugaCzesc
+                }
+                else{Toast.makeText(this, "Nie można usunąć niczego", Toast.LENGTH_SHORT).show()}
             }
 
             binding.btnRowna.setOnClickListener{
@@ -148,6 +159,15 @@ class PodstawoweObliczenia : AppCompatActivity() {
                 val data = binding.btn0.text
                 pierwszaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc + dzialanie
+            }
+
+            binding.btnC.setOnClickListener {
+                if(pierwszaCzesc.isNotEmpty()){
+                    val data = pierwszaCzesc.substring(0, pierwszaCzesc.length - 1)
+                    pierwszaCzesc = data
+                    binding.tvWynik.text = pierwszaCzesc
+                }
+                else{Toast.makeText(this, "Nie można usunąć niczego", Toast.LENGTH_SHORT).show()}
             }
 
             binding.btnPlus.setOnClickListener{
