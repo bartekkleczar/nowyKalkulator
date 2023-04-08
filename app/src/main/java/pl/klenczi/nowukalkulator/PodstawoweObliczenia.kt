@@ -30,47 +30,47 @@ class PodstawoweObliczenia : AppCompatActivity() {
 
         fun drugie(){
             binding.btn7.setOnClickListener() {
-                var data = binding.btn7.text
+                val data = binding.btn7.text
                 drugaCzesc += data
                 binding.tvWynik.text = drugaCzesc.toString()
             }
             binding.btn8.setOnClickListener() {
-                var data = binding.btn8.text
+                val data = binding.btn8.text
                 drugaCzesc += data
                 binding.tvWynik.text = drugaCzesc.toString()
             }
             binding.btn9.setOnClickListener() {
-                var data = binding.btn9.text
+                val data = binding.btn9.text
                 drugaCzesc += data
                 binding.tvWynik.text = drugaCzesc.toString()
             }
             binding.btn4.setOnClickListener() {
-                var data = binding.btn4.text
+                val data = binding.btn4.text
                 drugaCzesc += data
                 binding.tvWynik.text = drugaCzesc.toString()
             }
             binding.btn5.setOnClickListener() {
-                var data = binding.btn5.text
+                val data = binding.btn5.text
                 drugaCzesc += data
                 binding.tvWynik.text = drugaCzesc.toString()
             }
             binding.btn6.setOnClickListener() {
-                var data = binding.btn6.text
+                val data = binding.btn6.text
                 drugaCzesc += data
                 binding.tvWynik.text = drugaCzesc.toString()
             }
             binding.btn1.setOnClickListener() {
-                var data = binding.btn1.text
+                val data = binding.btn1.text
                 drugaCzesc += data
                 binding.tvWynik.text = drugaCzesc.toString()
             }
             binding.btn2.setOnClickListener() {
-                var data = binding.btn2.text
+                val data = binding.btn2.text
                 drugaCzesc += data
                 binding.tvWynik.text = drugaCzesc.toString()
             }
             binding.btn3.setOnClickListener() {
-                var data = binding.btn3.text
+                val data = binding.btn3.text
                 drugaCzesc += data
                 binding.tvWynik.text = drugaCzesc.toString()
             }
@@ -78,52 +78,57 @@ class PodstawoweObliczenia : AppCompatActivity() {
 
         fun pierwsze(){
             binding.btn7.setOnClickListener() {
-                var data = binding.btn7.text
+                val data = binding.btn7.text
                 pierwszaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc.toString()
             }
             binding.btn8.setOnClickListener() {
-                var data = binding.btn8.text
+                val data = binding.btn8.text
                 pierwszaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc.toString()
             }
             binding.btn9.setOnClickListener() {
-                var data = binding.btn9.text
+                val data = binding.btn9.text
                 pierwszaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc.toString()
             }
             binding.btn4.setOnClickListener() {
-                var data = binding.btn4.text
+                val data = binding.btn4.text
                 pierwszaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc.toString()
             }
             binding.btn5.setOnClickListener() {
-                var data = binding.btn5.text
+                val data = binding.btn5.text
                 pierwszaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc.toString()
             }
             binding.btn6.setOnClickListener() {
-                var data = binding.btn6.text
+                val data = binding.btn6.text
                 pierwszaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc.toString()
             }
             binding.btn1.setOnClickListener() {
-                var data = binding.btn1.text
+                val data = binding.btn1.text
                 pierwszaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc.toString()
             }
             binding.btn2.setOnClickListener() {
-                var data = binding.btn2.text
+                val data = binding.btn2.text
                 pierwszaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc.toString()
             }
             binding.btn3.setOnClickListener() {
-                var data = binding.btn3.text
+                val data = binding.btn3.text
                 pierwszaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc.toString()
             }
         }
-        
+
+        fun operator(){
+            binding.btnPlus.setOnClickListener{}
+                dzialanie = ""
+        }
+
         drugie()
 
     }
