@@ -122,14 +122,36 @@ class PodstawoweObliczenia : AppCompatActivity() {
                 pierwszaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc.toString()
             }
+
+            binding.btnPlus.setOnClickListener{
+                dzialanie = binding.btnPlus.text.toString()
+                binding.tvWynik.text = pierwszaCzesc + dzialanie
+                drugie()
+            }
+            binding.btnMinus.setOnClickListener{
+                dzialanie = binding.btnMinus.text.toString()
+                binding.tvWynik.text = pierwszaCzesc + dzialanie
+                drugie()
+            }
+            binding.btnDzielenie.setOnClickListener{
+                dzialanie = binding.btnDzielenie.text.toString()
+                binding.tvWynik.text = pierwszaCzesc + dzialanie
+                drugie()
+            }
+            binding.btnMnozenie.setOnClickListener{
+                dzialanie = binding.btnMnozenie.text.toString()
+                binding.tvWynik.text = pierwszaCzesc + dzialanie
+                drugie()
+            }
+            binding.btnProcent.setOnClickListener{
+                dzialanie = binding.btnProcent.text.toString()
+                binding.tvWynik.text = pierwszaCzesc + dzialanie
+                drugie()
+            }
+            
         }
 
-        fun operator(){
-            binding.btnPlus.setOnClickListener{}
-                dzialanie = ""
-        }
-
-        drugie()
+        pierwsze()
 
     }
 }
