@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">nowuKalkulator</string>
+    <string-array name="my_spinner_entries">
+        <item>Weight</item>
+        <item>Length</item>
+        <item>Time</item>
+    </string-array>
 </resources>
