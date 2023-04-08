@@ -3,12 +3,23 @@ package pl.klenczi.nowukalkulator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
+import android.widget.TextView
+import pl.klenczi.nowukalkulator.databinding.ActivityPodstawoweObliczeniaBinding
 
 class PodstawoweObliczenia : AppCompatActivity() {
+    private lateinit var binding: ActivityPodstawoweObliczeniaBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_podstawowe_obliczenia)
+        binding = ActivityPodstawoweObliczeniaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        var pierwszaCzesc = ""
+        var drugaCzesc = ""
+
+        val wynik = findViewById<TextView>(R.id.tvWynik)
 
         val back = findViewById<Button>(R.id.btnBackFromPO)
 
@@ -17,29 +28,56 @@ class PodstawoweObliczenia : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val ac = findViewById<Button>(R.id.btnAC)
-        val c = findViewById<Button>(R.id.btnC)
-        val procent = findViewById<Button>(R.id.btnProcent)
-        val dzielenie = findViewById<Button>(R.id.btnDzielenie)
+        fun drugie(){
+            
+            binding.btn7.setOnClickListener() {
+                var data = binding.btn7.text
+                drugaCzesc += data
+                binding.tvWynik.text = drugaCzesc.toString()
+            }
+            binding.btn8.setOnClickListener() {
+                var data = binding.btn8.text
+                drugaCzesc += data
+                binding.tvWynik.text = drugaCzesc.toString()
+            }
+            binding.btn9.setOnClickListener() {
+                var data = binding.btn9.text
+                drugaCzesc += data
+                binding.tvWynik.text = drugaCzesc.toString()
+            }
+            binding.btn4.setOnClickListener() {
+                var data = binding.btn4.text
+                drugaCzesc += data
+                binding.tvWynik.text = drugaCzesc.toString()
+            }
+            binding.btn5.setOnClickListener() {
+                var data = binding.btn5.text
+                drugaCzesc += data
+                binding.tvWynik.text = drugaCzesc.toString()
+            }
+            binding.btn6.setOnClickListener() {
+                var data = binding.btn6.text
+                drugaCzesc += data
+                binding.tvWynik.text = drugaCzesc.toString()
+            }
+            binding.btn1.setOnClickListener() {
+                var data = binding.btn1.text
+                drugaCzesc += data
+                binding.tvWynik.text = drugaCzesc.toString()
+            }
+            binding.btn2.setOnClickListener() {
+                var data = binding.btn2.text
+                drugaCzesc += data
+                binding.tvWynik.text = drugaCzesc.toString()
+            }
+            binding.btn3.setOnClickListener() {
+                var data = binding.btn3.text
+                drugaCzesc += data
+                binding.tvWynik.text = drugaCzesc.toString()
+            }
+        }
 
-        val n7 = findViewById<Button>(R.id.btn7)
-        val n8 = findViewById<Button>(R.id.btn8)
-        val n9 = findViewById<Button>(R.id.btn9)
-        val mnozenie = findViewById<Button>(R.id.btnMnozenie)
-
-        val n4 = findViewById<Button>(R.id.btn4)
-        val n5 = findViewById<Button>(R.id.btn5)
-        val n6 = findViewById<Button>(R.id.btn6)
-        val minus = findViewById<Button>(R.id.btnMinus)
-
-        val n1 = findViewById<Button>(R.id.btn1)
-        val n2 = findViewById<Button>(R.id.btn2)
-        val n3 = findViewById<Button>(R.id.btn3)
-        val plus = findViewById<Button>(R.id.btnPlus)
-
-        val n0 = findViewById<Button>(R.id.btn0)
-        val rowna = findViewById<Button>(R.id.btnRowna)
-
+        drugie()
 
     }
 }
