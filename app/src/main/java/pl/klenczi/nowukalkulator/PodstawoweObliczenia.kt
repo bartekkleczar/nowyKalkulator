@@ -83,12 +83,13 @@ class PodstawoweObliczenia : AppCompatActivity() {
 
             binding.btnRowna.setOnClickListener(){
                 var suma = 0.0
+                var assist: String // zmienna do pomocy w kodzie/żeby burdelu nie było
                 when(dzialanie){
                     binding.btnPlus.text.toString() -> {suma = pierwszaCzesc.toDouble() + drugaCzesc.toDouble()}
                     binding.btnMinus.text.toString() -> {suma = pierwszaCzesc.toDouble() - drugaCzesc.toDouble()}
                     binding.btnDzielenie.text.toString() -> {suma = pierwszaCzesc.toDouble() / drugaCzesc.toDouble()}
                     binding.btnMnozenie.text.toString() -> {suma = pierwszaCzesc.toDouble() * drugaCzesc.toDouble()}
-                    binding.btnProcent.text.toString() -> {(pierwszaCzesc.toDouble() / 100.0).toString(); suma = pierwszaCzesc.toDouble() * drugaCzesc.toDouble()}
+                    binding.btnProcent.text.toString() -> {assist = (pierwszaCzesc.toDouble() / 100.0).toString(); suma = assist.toDouble() * drugaCzesc.toDouble()}
                 }
                 suma = String.format("%.2f", suma).toDouble()
 
@@ -146,8 +147,8 @@ class PodstawoweObliczenia : AppCompatActivity() {
 
             binding.btn0.setOnClickListener() {
                 val data = binding.btn0.text
-                drugaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
+                pierwszaCzesc += data
+                binding.tvWynik.text = pierwszaCzesc + dzialanie
             }
 
             binding.btnPlus.setOnClickListener{
