@@ -75,6 +75,12 @@ class PodstawoweObliczenia : AppCompatActivity() {
                 binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
             }
 
+            binding.btn0.setOnClickListener() {
+                val data = binding.btn0.text
+                drugaCzesc += data
+                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
+            }
+
             binding.btnRowna.setOnClickListener(){
                 var suma = 0.0
                 when(dzialanie){
@@ -136,6 +142,12 @@ class PodstawoweObliczenia : AppCompatActivity() {
                 val data = binding.btn3.text
                 pierwszaCzesc += data
                 binding.tvWynik.text = pierwszaCzesc.toString()
+            }
+
+            binding.btn0.setOnClickListener() {
+                val data = binding.btn0.text
+                drugaCzesc += data
+                binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc
             }
 
             binding.btnPlus.setOnClickListener{
