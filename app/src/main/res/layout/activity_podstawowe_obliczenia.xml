@@ -59,7 +59,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvPodstawoweObliczenia"
-        android:layout_width="413dp"
+        android:layout_width="match_parent"
         android:layout_height="421dp"
         android:background="@color/cardView"
         app:cardCornerRadius="50dp"
@@ -71,8 +71,8 @@
         app:layout_constraintVertical_bias="0.93">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="411dp"
-            android:layout_height="451dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -179,9 +179,9 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="2.5dp"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/button"
                     android:text="+"
-                    app:cornerRadius="100dp"
-                    android:backgroundTint="@color/button" />
+                    app:cornerRadius="100dp" />
             </LinearLayout>
 
             <LinearLayout
