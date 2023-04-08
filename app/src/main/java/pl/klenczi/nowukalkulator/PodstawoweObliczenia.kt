@@ -112,47 +112,47 @@ class PodstawoweObliczenia : AppCompatActivity() {
             binding.btn7.setOnClickListener {
                 val data = binding.btn7.text
                 pierwszaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc.toString()
+                binding.tvWynik.text = pierwszaCzesc
             }
             binding.btn8.setOnClickListener {
                 val data = binding.btn8.text
                 pierwszaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc.toString()
+                binding.tvWynik.text = pierwszaCzesc
             }
             binding.btn9.setOnClickListener {
                 val data = binding.btn9.text
                 pierwszaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc.toString()
+                binding.tvWynik.text = pierwszaCzesc
             }
             binding.btn4.setOnClickListener {
                 val data = binding.btn4.text
                 pierwszaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc.toString()
+                binding.tvWynik.text = pierwszaCzesc
             }
             binding.btn5.setOnClickListener {
                 val data = binding.btn5.text
                 pierwszaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc.toString()
+                binding.tvWynik.text = pierwszaCzesc
             }
             binding.btn6.setOnClickListener {
                 val data = binding.btn6.text
                 pierwszaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc.toString()
+                binding.tvWynik.text = pierwszaCzesc
             }
             binding.btn1.setOnClickListener {
                 val data = binding.btn1.text
                 pierwszaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc.toString()
+                binding.tvWynik.text = pierwszaCzesc
             }
             binding.btn2.setOnClickListener {
                 val data = binding.btn2.text
                 pierwszaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc.toString()
+                binding.tvWynik.text = pierwszaCzesc
             }
             binding.btn3.setOnClickListener {
                 val data = binding.btn3.text
                 pierwszaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc.toString()
+                binding.tvWynik.text = pierwszaCzesc
             }
 
             binding.btn0.setOnClickListener {
