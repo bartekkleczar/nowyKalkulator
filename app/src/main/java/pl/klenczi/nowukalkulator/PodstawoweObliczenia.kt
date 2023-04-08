@@ -30,7 +30,7 @@ class PodstawoweObliczenia : AppCompatActivity() {
         }
 
         fun drugie(){
-            var assist: String =  pierwszaCzesc + dzialanie
+            var assist: String =  "$pierwszaCzesc $dzialanie "
             binding.btn7.setOnClickListener {
                 val data = binding.btn7.text
                 drugaCzesc += data
