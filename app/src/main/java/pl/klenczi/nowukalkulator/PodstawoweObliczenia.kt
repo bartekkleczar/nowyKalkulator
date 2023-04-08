@@ -158,7 +158,7 @@ class PodstawoweObliczenia : AppCompatActivity() {
             binding.btn0.setOnClickListener {
                 val data = binding.btn0.text
                 pierwszaCzesc += data
-                binding.tvWynik.text = pierwszaCzesc + dzialanie
+                binding.tvWynik.text = pierwszaCzesc
             }
 
             binding.btnC.setOnClickListener {
@@ -172,27 +172,27 @@ class PodstawoweObliczenia : AppCompatActivity() {
 
             binding.btnPlus.setOnClickListener{
                 dzialanie = binding.btnPlus.text.toString()
-                binding.tvWynik.text = pierwszaCzesc + dzialanie
+                binding.tvWynik.text = "$pierwszaCzesc $dzialanie "
                 drugie()
             }
             binding.btnMinus.setOnClickListener{
                 dzialanie = binding.btnMinus.text.toString()
-                binding.tvWynik.text = pierwszaCzesc + dzialanie
+                binding.tvWynik.text = "$pierwszaCzesc $dzialanie "
                 drugie()
             }
             binding.btnDzielenie.setOnClickListener{
                 dzialanie = binding.btnDzielenie.text.toString()
-                binding.tvWynik.text = pierwszaCzesc + dzialanie
+                binding.tvWynik.text = "$pierwszaCzesc $dzialanie "
                 drugie()
             }
             binding.btnMnozenie.setOnClickListener{
                 dzialanie = binding.btnMnozenie.text.toString()
-                binding.tvWynik.text = pierwszaCzesc + dzialanie
+                binding.tvWynik.text = "$pierwszaCzesc $dzialanie "
                 drugie()
             }
             binding.btnProcent.setOnClickListener{
                 dzialanie = binding.btnProcent.text.toString()
-                binding.tvWynik.text = pierwszaCzesc + dzialanie
+                binding.tvWynik.text = "$pierwszaCzesc $dzialanie "
                 drugie()
             }
             
