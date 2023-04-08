@@ -82,11 +82,11 @@ class PodstawoweObliczenia : AppCompatActivity() {
                     binding.btnMinus.text.toString() -> {suma = pierwszaCzesc.toDouble() - drugaCzesc.toDouble()}
                     binding.btnDzielenie.text.toString() -> {suma = pierwszaCzesc.toDouble() / drugaCzesc.toDouble()}
                     binding.btnMnozenie.text.toString() -> {suma = pierwszaCzesc.toDouble() * drugaCzesc.toDouble()}
-                    binding.btnProcent.text.toString() -> {suma = pierwszaCzesc.toDouble() * drugaCzesc.toDouble()}
+                    binding.btnProcent.text.toString() -> {(pierwszaCzesc.toDouble() / 100.0).toString(); suma = pierwszaCzesc.toDouble() * drugaCzesc.toDouble()}
                 }
+                suma = String.format("%.2f", suma).toDouble()
 
-
-                //binding.tvWynik.text = pierwszaCzesc + dzialanie + drugaCzesc + " " + binding.btnRowna.text.toString() + " " + suma.toString()
+                binding.tvWynik.text = "$pierwszaCzesc $dzialanie $drugaCzesc ${binding.btnRowna.text} $suma"
 
             }
         }
