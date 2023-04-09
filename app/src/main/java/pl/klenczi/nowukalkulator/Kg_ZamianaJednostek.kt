@@ -16,8 +16,6 @@ class Kg_ZamianaJednostek : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kg_zamiana_jednostek)
 
-        var selectedItemInput = ""
-        var selectedItemOutput = ""
         var input = findViewById<EditText>(R.id.ptInput)
         var output = findViewById<TextView>(R.id.tvOutput)
         var convert = findViewById<Button>(R.id.btnConvert)
@@ -29,6 +27,8 @@ class Kg_ZamianaJednostek : AppCompatActivity() {
             startActivity(intent)
         }
 
+        var selectedItemInput = ""
+        var selectedItemOutput = ""
         val inputJednostka = findViewById<Spinner>(R.id.spInput)
         val outputJednostka = findViewById<Spinner>(R.id.spOutput)
 
@@ -62,6 +62,9 @@ class Kg_ZamianaJednostek : AppCompatActivity() {
 
             output.text = result.toString()
         }
+
+        var ac = findViewById<Button>(R.id.btnACkgZJ)
+        ac.setOnClickListener {input.setHint("Podaj wartość"); input.setText(""); output.text = ""}
 
         convert.setOnClickListener {
             convert()
