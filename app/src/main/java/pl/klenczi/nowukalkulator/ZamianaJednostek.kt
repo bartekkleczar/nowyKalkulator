@@ -11,7 +11,7 @@ class ZamianaJednostek : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zamiana_jednostek)
 
-        val back = findViewById<Button>(R.id.btnBackFromKgZJ)
+        val back = findViewById<Button>(R.id.btnBackFromCmZJ)
 
         back.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
@@ -27,7 +27,8 @@ class ZamianaJednostek : AppCompatActivity() {
         }
 
         cm.setOnClickListener{
-
+            val intent = Intent(this, Cm_ZamianaJednostek::class.java)
+            startActivity(intent)
         }
     }
 }

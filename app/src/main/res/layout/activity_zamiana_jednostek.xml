@@ -27,7 +27,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tvTitleZamianaJednostekWagi"
+                android:id="@+id/tvTitleZamianaJednostekDlugosci"
                 android:layout_width="335dp"
                 android:layout_height="44dp"
                 android:text="ZamianaJednostek"
@@ -43,7 +43,7 @@
                 app:layout_constraintVertical_bias="0.186" />
 
             <Button
-                android:id="@+id/btnBackFromKgZJ"
+                android:id="@+id/btnBackFromCmZJ"
                 android:layout_width="215dp"
                 android:layout_height="45dp"
                 android:backgroundTint="@color/button"
