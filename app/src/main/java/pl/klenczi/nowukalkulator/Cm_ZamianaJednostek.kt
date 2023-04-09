@@ -54,21 +54,15 @@ class Cm_ZamianaJednostek : AppCompatActivity() {
 
         fun convert(sII: String = selectedItemInput, sIO: String = selectedItemOutput) {
             val iT = input.text.toString().toDoubleOrNull() ?: 0.0
-            val lista = mapOf("mm" to 0.001, "cm" to 0.01, "m" to 1.0, "km" to 1000.0, "ft" to 3.2808399, "mi" to 0.000621371192)
+            val lista = mapOf("mm" to 0.001, "cm" to 0.01, "m" to 1.0, "km" to 1000.0)
             val stabilne = listOf<String>("mm", "cm", "m", "km")
             var result: Double = 0.0
-            if(sII != "mm" || sII != "cm" || sII != "m" || sII != "km"){
-                result = iT * lista[sII]!! / lista["m"]!!; result = result * lista[sIO]!!
-            }
-            if(sIO != "mm" || sIO != "cm" || sIO != "m" || sIO != "km"){
-                Toast.makeText(this, "Ten kalkulator nie obsługuje zmiany Z jednostek innych niż pochodne metra :((", Toast.LENGTH_SHORT).show()
-                result = 0.0
-            }
-            else{
+
                 result = iT * lista[sII]!! / lista[sIO]!!
+                output.text = result.toString()
             }
-            output.text = result.toString()
-        }
+
+
 
         var ac = findViewById<Button>(R.id.btnACcmZJ)
         ac.setOnClickListener {input.setHint("Podaj wartość"); input.setText(""); output.text = ""}
