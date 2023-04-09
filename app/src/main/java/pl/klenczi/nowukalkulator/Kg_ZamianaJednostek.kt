@@ -16,9 +16,9 @@ class Kg_ZamianaJednostek : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kg_zamiana_jednostek)
 
-        var input = findViewById<EditText>(R.id.ptInput)
-        var output = findViewById<TextView>(R.id.tvOutput)
-        var convert = findViewById<Button>(R.id.btnConvert)
+        var input = findViewById<EditText>(R.id.ptInputcm)
+        var output = findViewById<TextView>(R.id.tvOutputcm)
+        var convert = findViewById<Button>(R.id.btnConvertcm)
 
         val back = findViewById<Button>(R.id.btnBackFromCmZJ)
 
@@ -29,8 +29,8 @@ class Kg_ZamianaJednostek : AppCompatActivity() {
 
         var selectedItemInput = ""
         var selectedItemOutput = ""
-        val inputJednostka = findViewById<Spinner>(R.id.spInput)
-        val outputJednostka = findViewById<Spinner>(R.id.spOutput)
+        val inputJednostka = findViewById<Spinner>(R.id.spInputcm)
+        val outputJednostka = findViewById<Spinner>(R.id.spOutputcm)
 
         inputJednostka.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
@@ -63,7 +63,7 @@ class Kg_ZamianaJednostek : AppCompatActivity() {
             output.text = result.toString()
         }
 
-        var ac = findViewById<Button>(R.id.btnACkgZJ)
+        var ac = findViewById<Button>(R.id.btnACcmZJ)
         ac.setOnClickListener {input.setHint("Podaj wartość"); input.setText(""); output.text = ""}
 
         convert.setOnClickListener {
