@@ -7,5 +7,7 @@
         <item>dag</item>
         <item>kg</item>
         <item>t</item>
+        <item>lb</item>
+        <item>oz</item>
     </string-array>
 </resources>
