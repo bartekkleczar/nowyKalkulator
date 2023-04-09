@@ -3,6 +3,7 @@ package pl.klenczi.nowukalkulator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.InputType
 import android.view.View
 import android.widget.*
 
@@ -14,6 +15,8 @@ class Cm_ZamianaJednostek : AppCompatActivity() {
         var input = findViewById<EditText>(R.id.ptInputcm)
         var output = findViewById<TextView>(R.id.tvOutputcm)
         var convert = findViewById<Button>(R.id.btnConvertcm)
+
+        input.inputType = InputType.TYPE_CLASS_NUMBER
 
         val back = findViewById<Button>(R.id.btnBackFromcmZJ)
 

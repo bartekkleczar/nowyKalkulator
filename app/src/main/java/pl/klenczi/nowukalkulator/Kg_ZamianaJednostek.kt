@@ -3,6 +3,7 @@ package pl.klenczi.nowukalkulator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.InputType
 import android.view.View
 import android.widget.AdapterView
 import android.widget.Button
@@ -19,6 +20,8 @@ class Kg_ZamianaJednostek : AppCompatActivity() {
         var input = findViewById<EditText>(R.id.ptInputkg)
         var output = findViewById<TextView>(R.id.tvOutputkg)
         var convert = findViewById<Button>(R.id.btnConvertkg)
+
+        input.inputType = InputType.TYPE_CLASS_NUMBER
 
         val back = findViewById<Button>(R.id.btnBackFromkgZJ)
 
