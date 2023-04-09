@@ -4,14 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import pl.klenczi.nowukalkulator.databinding.ActivityPodstawoweObliczeniaBinding
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ZamianaJednostek : AppCompatActivity() {
-    private lateinit var binding: ActivityPodstawoweObliczeniaBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityPodstawoweObliczeniaBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_zamiana_jednostek)
 
         val back = findViewById<Button>(R.id.btnBackFromZJ)
 
@@ -20,5 +18,15 @@ class ZamianaJednostek : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val kg = findViewById<FloatingActionButton>(R.id.fabKG)
+        val cm = findViewById<FloatingActionButton>(R.id.fabCm)
+
+        kg.setOnClickListener{
+
+        }
+
+        cm.setOnClickListener{
+
+        }
     }
 }
