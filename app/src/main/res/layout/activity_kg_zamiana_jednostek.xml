@@ -44,7 +44,7 @@
                     android:layout_height="match_parent">
 
                     <EditText
-                        android:id="@+id/ptInputcm"
+                        android:id="@+id/ptInputkg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -59,11 +59,11 @@
                         app:layout_constraintVertical_bias="0.49" />
 
                     <Spinner
-                        android:id="@+id/spInputcm"
+                        android:id="@+id/spInputkg"
                         android:layout_width="124dp"
                         android:layout_height="45dp"
                         android:backgroundTint="@color/background"
-                        android:entries="@array/my_spinner_items"
+                        android:entries="@array/spinnerKg"
                         android:foregroundTint="@color/background"
                         android:prompt="@string/my_spinner_prompt"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,11 +75,13 @@
             </androidx.cardview.widget.CardView>
 
             <Button
-                android:id="@+id/btnConvertcm"
+                android:id="@+id/btnConvertkg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/button"
+                android:foregroundTint="@color/background"
                 android:text="Przelicz"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -90,13 +92,14 @@
                 app:layout_constraintVertical_bias="0.847" />
 
             <Button
-                android:id="@+id/btnACcmZJ"
+                android:id="@+id/btnACkgZJ"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/button"
                 android:foregroundTint="@color/button"
                 android:text="AC"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -123,11 +126,11 @@
                     android:layout_height="match_parent">
 
                     <Spinner
-                        android:id="@+id/spOutputcm"
+                        android:id="@+id/spOutputkg"
                         android:layout_width="124dp"
                         android:layout_height="45dp"
                         android:backgroundTint="@color/background"
-                        android:entries="@array/my_spinner_items"
+                        android:entries="@array/spinnerKg"
                         android:foregroundTint="@color/background"
                         android:prompt="@string/my_spinner_prompt"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -138,7 +141,7 @@
                         app:layout_constraintVertical_bias="0.509" />
 
                     <TextView
-                        android:id="@+id/tvOutputcm"
+                        android:id="@+id/tvOutputkg"
                         android:layout_width="200dp"
                         android:layout_height="45dp"
                         android:textAlignment="center"
@@ -190,7 +193,7 @@
                 app:layout_constraintVertical_bias="0.186" />
 
             <Button
-                android:id="@+id/btnBackFromCmZJ"
+                android:id="@+id/btnBackFromkgZJ"
                 android:layout_width="215dp"
                 android:layout_height="45dp"
                 android:backgroundTint="@color/button"
