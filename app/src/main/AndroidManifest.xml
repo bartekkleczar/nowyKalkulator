@@ -12,6 +12,9 @@
         android:theme="@style/Theme.NowuKalkulator"
         tools:targetApi="31">
         <activity
+            android:name=".Kg_ZamianaJednostek"
+            android:exported="false" />
+        <activity
             android:name=".ZamianaJednostek"
             android:exported="false" />
         <activity

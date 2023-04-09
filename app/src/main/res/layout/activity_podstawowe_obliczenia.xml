@@ -10,7 +10,7 @@
     tools:context=".PodstawoweObliczenia">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cvName"
+        android:id="@+id/cvNameKgZJ"
         android:layout_width="413dp"
         android:layout_height="103dp"
         app:cardBackgroundColor="@color/cardView"
@@ -58,7 +58,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cvPodstawoweObliczenia"
+        android:id="@+id/cvZamianaJednostekWagi"
         android:layout_width="match_parent"
         android:layout_height="421dp"
         android:background="@color/cardView"
